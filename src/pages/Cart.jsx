@@ -14,7 +14,7 @@ function Cart() {
   const delivery = cartItems.length > 0 ? 2.00 : 0;
   const total = subtotal + delivery;
 
-  const handleCheckout = () => 
+  const handleCheckout = () => {
     setShowModal(true);
     setTimeout(() => {
       clearCart();
@@ -97,8 +97,8 @@ function Cart() {
                 <span>Total</span>
                 <span>${total.toFixed(2)}</span>
               </div>
-              <button 
-                className="order_btn" 
+              <button
+                className="order_btn"
                 disabled={cartItems.length === 0}
                 onClick={handleCheckout}
               >
@@ -125,6 +125,6 @@ function Cart() {
       </Modal>
     </section>
   );
-
+}
 
 export default Cart;
