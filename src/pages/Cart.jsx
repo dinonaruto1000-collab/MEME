@@ -125,6 +125,6 @@ function Cart() {
       </Modal>
     </section>
   );
-}
+
 
 export default Cart;
