@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars, react/prop-types */
 import React from "react";
+import PropTypes from "prop-types";
 import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -50,4 +52,12 @@ function Cards({
   );
 }
 
-export default Cards;
+Cards.propTypes = {
+  image: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  renderratingIcons: PropTypes.func.isRequired,
+  handleAddToCart: PropTypes.func.isRequired,
+};

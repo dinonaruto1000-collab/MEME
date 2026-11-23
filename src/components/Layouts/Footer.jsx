@@ -7,7 +7,7 @@ function Footer() {
   const scrollTo = () => {
     window.scrollTo({
       top: 0,
-      behaviour: "smooth",
+      behavior: "smooth",
     });
   };
 

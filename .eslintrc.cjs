@@ -13,7 +13,7 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react/jsx-no-target-blank': 'off',
-    'react-refresh/only-export-components': [
+    'react/react-in-jsx-scope': 'off',
       'warn',
       { allowConstantExport: true },
     ],
