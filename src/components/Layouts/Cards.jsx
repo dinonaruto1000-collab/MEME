@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars, react/prop-types */
 import React from "react";
 import PropTypes from "prop-types";
 import { Card, Col } from "react-bootstrap";
